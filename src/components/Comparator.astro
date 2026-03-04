@@ -1,0 +1,266 @@
+---
+/**
+ * Shared comparator component — rendered for both NL and DE.
+ * Props:
+ *  - t: translation object (nl.json or de.json)
+ *  - products: Product[]
+ *  - locale: 'nl' | 'de'
+ *  - altLocale: 'de' | 'nl'
+ *  - altUrl: URL of the other language
+ */
+import type { Product, Locale } from '../types';
+
+export interface Props {
+  t: Record<string, any>;
+  products: Product[];
+  locale: Locale;
+  altLocale: Locale;
+  altUrl: string;
+}
+
+const { t, products, locale, altLocale, altUrl } = Astro.props;
+
+// Unique voltage values for filter buttons
+const voltages = ['12V', '24V', '36V', '48V', '51.2V'].filter(v =>
+  products.some(p => p.voltage === v)
+);
+
+// Unique brands
+const brands = ['litime', 'redodo', 'rebelcell', 'powerlit'] as const;
+const brandLabels: Record<string, string> = {
+  litime: 'LiTime',
+  redodo: 'Redodo',
+  rebelcell: 'Rebelcell',
+  powerlit: 'Powerlit',
+};
+
+// App keys to show in sidebar
+const appKeys = ['trolling', 'camper', 'offgrid', 'boot', 'onderzit', 'mover'];
+
+function fmtPrice(p: number | null, locale: string): string {
+  if (p == null) return '—';
+  return new Intl.NumberFormat(locale === 'de' ? 'de-DE' : 'nl-NL', {
+    style: 'currency', currency: 'EUR', minimumFractionDigits: 0, maximumFractionDigits: 2,
+  }).format(p);
+}
+
+function dimStr(dims: [number, number, number] | null, lang: string): string {
+  if (!dims) return t.card.dimsUnknown;
+  return `${dims[0]} × ${dims[1]} × ${dims[2]} cm`;
+}
+
+function lowestPrice(p: Product): number {
+  const candidates = [p.price, p.priceBol, p.priceAmz].filter((x): x is number => x != null);
+  return Math.min(...candidates);
+}
+
+function tagClass(app: string): string {
+  const map: Record<string, string> = {
+    trolling: 'tag-trolling',
+    camper: 'tag-camper',
+    offgrid: 'tag-offgrid',
+    boot: 'tag-boot',
+    onderzit: 'tag-onderzit',
+    mover: 'tag-mover',
+  };
+  return map[app] ?? 'tag-offgrid';
+}
+
+const totalCount = products.length;
+const countTpl = locale === 'de'
+  ? `{n} von {t} Akkus angezeigt`
+  : `{n} van {t} accu's weergegeven`;
+---
+
+<div class="site-header" style="position:relative">
+  <div class="lang-switcher">
+    <a href={altUrl} class={locale === altLocale ? 'active' : ''}>
+      {altLocale.toUpperCase()}
+    </a>
+    <a href="#" class="active">{locale.toUpperCase()}</a>
+  </div>
+  <h1>{t.title}</h1>
+  <p>{t.subtitle}</p>
+</div>
+
+<div class="page-wrap">
+  <!-- ── Sidebar ───────────────────────────────────── -->
+  <aside class="sidebar">
+
+    <!-- Voltage -->
+    <div class="filter-section">
+      <span class="filter-label">{t.filter.voltage}</span>
+      <div class="voltage-grid" id="voltageFilters">
+        <button class="volt-btn active" data-v="0">{t.filter.all}</button>
+        {voltages.map(v => (
+          <button class="volt-btn" data-v={v}>{v}</button>
+        ))}
+      </div>
+    </div>
+
+    <!-- Brand -->
+    <div class="filter-section">
+      <span class="filter-label">{t.filter.brand}</span>
+      <div class="voltage-grid" id="brandFilters">
+        <button class="volt-btn active" data-b="0">{t.filter.all}</button>
+        {brands.filter(b => products.some(p => p.brand === b)).map(b => (
+          <button class="volt-btn" data-b={b}>{brandLabels[b]}</button>
+        ))}
+      </div>
+    </div>
+
+    <!-- Warranty -->
+    <div class="filter-section">
+      <span class="filter-label">{t.filter.warranty}</span>
+      <div class="voltage-grid" id="warrantyFilters">
+        <button class="volt-btn active" data-w="0">{t.filter.all}</button>
+        <button class="volt-btn" data-w="3">3 {t.filter.jaar}</button>
+        <button class="volt-btn" data-w="5">5 {t.filter.jaar}</button>
+      </div>
+    </div>
+
+    <!-- Cycles -->
+    <div class="filter-section">
+      <span class="filter-label">{t.filter.cycles}</span>
+      <div class="voltage-grid" id="cyclesFilters">
+        <button class="volt-btn active" data-c="0">{t.filter.all}</button>
+        <button class="volt-btn" data-c="4000">4.000{t.filter.plus}</button>
+        <button class="volt-btn" data-c="5000">5.000{t.filter.plus}</button>
+        <button class="volt-btn" data-c="6000">6.000{t.filter.plus}</button>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="filter-section">
+      <span class="filter-label">{t.filter.features}</span>
+      <div class="feat-check-list">
+        {([
+          ['bt',   t.features.bluetooth],
+          ['lt',   t.features.lowtemp],
+          ['heat', t.features.heating],
+          ['can',  t.features.can],
+          ['flex', t.features.flex],
+          ['sp',   t.features.sp],
+        ] as [string, string][]).map(([key, label]) => (
+          <label class="feat-check">
+            <input type="checkbox" id={`feat-${key}`} data-feat={key} />
+            {label}
+          </label>
+        ))}
+      </div>
+    </div>
+
+    <!-- Application -->
+    <div class="filter-section">
+      <span class="filter-label">{t.filter.application}</span>
+      <div class="voltage-grid" id="appFilters">
+        <button class="volt-btn active" data-app="">{t.filter.all}</button>
+        {appKeys.filter(k => products.some(p => p.apps.includes(k))).map(k => (
+          <button class="volt-btn" data-app={k}>{(t.apps as Record<string,string>)[k]}</button>
+        ))}
+      </div>
+    </div>
+
+    <button class="reset-btn" id="resetBtn">{t.filter.reset}</button>
+  </aside>
+
+  <!-- ── Main ──────────────────────────────────────── -->
+  <main class="main-content">
+    <p class="results-count">
+      <span id="results-count" data-tpl={countTpl}>{countTpl.replace('{n}', String(totalCount)).replace('{t}', String(totalCount))}</span>
+    </p>
+
+    <div class="cards-grid">
+      {products.map(p => {
+        const low = lowestPrice(p);
+        const desc = (p.desc as Record<string, string>)[locale] ?? p.desc.nl;
+        const appsStr = p.apps.join(',');
+        return (
+          <article
+            class="card"
+            data-brand={p.brand}
+            data-voltage={p.voltage}
+            data-warranty={p.warranty}
+            data-cycles={p.cycles}
+            data-bt={String(p.bt)}
+            data-lt={String(p.lt)}
+            data-heat={String(p.heat)}
+            data-can={String(p.can)}
+            data-flex={String(p.flex)}
+            data-sp={String(p.sp)}
+            data-apps={appsStr}
+            data-hidden="false"
+          >
+            <div class="card-header">
+              <div class="card-brand">{brandLabels[p.brand]}</div>
+              <div class="card-name">{p.name}</div>
+            </div>
+
+            <div class={`card-img-wrap brand-${p.brand}`}>
+              <img src={p.img} alt={p.name} loading="lazy" />
+            </div>
+
+            <div class="card-badges">
+              {p.bt   && <span class="badge feat-bt">{t.features_info.bt.badge}</span>}
+              {p.lt   && <span class="badge feat-lt">{t.features_info.lt.badge}</span>}
+              {p.heat && <span class="badge feat-heat">{t.features_info.heat.badge}</span>}
+              {p.can  && <span class="badge feat-can">{t.features_info.can.badge}</span>}
+              {p.flex && <span class="badge feat-flex">ComFlex</span>}
+              {p.sp   && <span class="badge feat-sp">{t.features_info.sp.badge}</span>}
+              {p.apps.map(app => (
+                <span class={`app-tag ${tagClass(app)}`}>
+                  {(t.apps as Record<string,string>)[app] ?? app}
+                </span>
+              ))}
+            </div>
+
+            <div class="card-body">
+              <div class="card-desc">{desc}</div>
+
+              <div class="card-spec">
+                ⚖️ <strong>{p.weight ? `${p.weight} kg` : '—'}</strong>
+              </div>
+              <div class="card-spec">
+                📐 <strong>{dimStr(p.dims, locale)}</strong>
+              </div>
+              <div class="card-spec">
+                🔄 <strong>{p.cycles ? p.cycles.toLocaleString(locale === 'de' ? 'de-DE' : 'nl-NL') : '—'} {t.card.cycles}</strong>
+                <span class="spec-muted">@ {p.dod ?? 100}% {t.card.dod}</span>
+              </div>
+              <div class="card-spec">
+                🛡️ <strong>{p.warranty} {t.card.years}</strong>
+              </div>
+            </div>
+
+            <div class="card-price-block">
+              <div>
+                <div class="price-main">{fmtPrice(low, locale)}</div>
+                <div class="price-sub">{t.card.priceLabel}</div>
+              </div>
+            </div>
+
+            <div class="card-buy-links">
+              {p.bol && (
+                <a href={p.bol} target="_blank" rel="noopener" class="buy-btn btn-bol">
+                  {t.card.buyBol}
+                </a>
+              )}
+              {p.amz && (
+                <a href={p.amz} target="_blank" rel="noopener" class="buy-btn btn-amz">
+                  {t.card.buyAmz}
+                </a>
+              )}
+            </div>
+          </article>
+        );
+      })}
+
+      <div id="no-results" style="display:none" class="no-results">
+        <p>{t.card.noResults}</p>
+        <p>{t.card.resetHint}</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../scripts/filter.ts"></script>

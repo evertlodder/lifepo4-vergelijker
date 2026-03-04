@@ -1,0 +1,84 @@
+{
+  "lang": "de",
+  "siteName": "LiFePO4 Akkuvergleich",
+  "siteDesc": "Vergleiche LiFePO4-Lithiumbatterien nach Preis, Kapazität, Funktionen und Einsatzbereich.",
+  "title": "LiFePO4 Akkuvergleich",
+  "subtitle": "Finde den richtigen Lithium-Akku für dein Boot, Wohnmobil oder Off-Grid-System",
+
+  "filter": {
+    "voltage": "Spannung",
+    "brand": "Marke",
+    "warranty": "Garantie",
+    "cycles": "Min. Zyklen",
+    "features": "Funktionen",
+    "application": "Anwendung",
+    "all": "Alle",
+    "reset": "Filter zurücksetzen",
+    "jaar": "Jahre",
+    "plus": "+"
+  },
+
+  "features": {
+    "bluetooth": "Bluetooth",
+    "lowtemp": "Low Temp Cutoff",
+    "heating": "Heizung",
+    "can": "CAN / Victron",
+    "flex": "ComFlex (Rack)",
+    "sp": "4S4P geeignet"
+  },
+
+  "apps": {
+    "trolling": "Trollingmotor",
+    "camper": "Wohnmobil / RV",
+    "offgrid": "Off-Grid",
+    "boot": "Außenbordmotor",
+    "onderzit": "Untersitz",
+    "mover": "Wohnmobil-Mover"
+  },
+
+  "card": {
+    "priceFrom": "Preis",
+    "priceLabel": "Günstigster Preis",
+    "bolPrice": "bol.com",
+    "amzPrice": "Amazon",
+    "weight": "Gewicht",
+    "dims": "Abmessungen",
+    "cycles": "Zyklen",
+    "dod": "DOD",
+    "warranty": "Garantie",
+    "years": "Jahre",
+    "dimsUnknown": "Abmessungen unbekannt",
+    "buyBol": "Kaufen bei bol.com",
+    "buyAmz": "Kaufen bei Amazon",
+    "noResults": "Keine Akkus für diese Filter gefunden.",
+    "resetHint": "Passe die Filter an, um Ergebnisse zu sehen."
+  },
+
+  "features_info": {
+    "bt": {
+      "badge": "Bluetooth 5.0",
+      "title": "Bluetooth 5.0 Überwachung",
+      "body": "Mit integriertem Bluetooth 5.0 verbindest du den Akku kabellos mit der App. Du siehst Echtzeit-Ladezustand, Spannung, Strom, Temperatur und BMS-Alarme. Reichweite ca. 10 Meter. Kein zusätzlicher Shunt oder Display erforderlich."
+    },
+    "lt": {
+      "badge": "Low Temp Cutoff",
+      "title": "Low Temp Cutoff — Ladeschutz bei Frost",
+      "body": "Bei Minustemperaturen (unter 0 °C) blockiert der Akku automatisch den Ladevorgang, um Zellschäden zu verhindern. Entladen bleibt weiterhin möglich. Stellt sich automatisch wieder her, wenn der Akku wärmer wird."
+    },
+    "heat": {
+      "badge": "Heizung",
+      "title": "Integrierte Heizung",
+      "body": "Das interne Heizelement erwärmt den Akku automatisch vor dem Laden. Laden ist so sicher möglich bis −20 °C. Ideal für Wohnmobile, Boote und den Winterbetrieb."
+    },
+    "can": {
+      "badge": "CAN/RS485 + Victron",
+      "title": "CAN/RS485 — Victron-Integration",
+      "body": "Physische CAN-Bus- und RS485-Schnittstellen für direkte Integration mit Victron (Cerbo GX, MultiPlus). Der Akku überträgt 25+ Parameter. Kein zusätzlicher SmartShunt erforderlich."
+    },
+    "sp": {
+      "badge": "4S4P",
+      "title": "4S4P — Reihen- und Parallelschaltung",
+      "body": "4 Akkus in Reihe (4×12V = 48V) und 4 Reihen parallel = 16 Akkus für große Systeme. Immer identische Akkus verwenden. Ein Batteriebalancer wird bei Reihenschaltung dringend empfohlen."
+    }
+  }
+}

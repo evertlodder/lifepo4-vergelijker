@@ -1,0 +1,340 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  lang: string;
+}
+const { title, description, lang } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title}</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+</head>
+<body>
+  <slot />
+</body>
+</html>
+
+<style is:global>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #f0f2f5;
+    color: #1a1a2e;
+    min-height: 100vh;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* ── Layout ───────────────────────────────────── */
+  .page-wrap {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* ── Header ───────────────────────────────────── */
+  .site-header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+    color: #fff;
+    padding: 24px 32px 20px;
+    text-align: center;
+  }
+  .site-header h1 {
+    font-size: clamp(20px, 4vw, 32px);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  .site-header p {
+    font-size: 14px;
+    opacity: 0.75;
+    margin-top: 6px;
+  }
+  .lang-switcher {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    display: flex;
+    gap: 6px;
+  }
+  .lang-switcher a {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all .15s;
+  }
+  .lang-switcher a.active,
+  .lang-switcher a:hover {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+  }
+
+  /* ── Sidebar ──────────────────────────────────── */
+  .sidebar {
+    width: 240px;
+    flex-shrink: 0;
+    background: #fff;
+    border-right: 1px solid #e2e8f0;
+    padding: 20px 16px;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+  .filter-section { margin-bottom: 20px; }
+  .filter-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #64748b;
+    margin-bottom: 8px;
+  }
+  .voltage-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .volt-btn {
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1.5px solid #e2e8f0;
+    background: #f8fafc;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .15s;
+    color: #475569;
+  }
+  .volt-btn:hover { border-color: #94a3b8; background: #f1f5f9; }
+  .volt-btn.active {
+    background: #1a1a2e;
+    border-color: #1a1a2e;
+    color: #fff;
+    font-weight: 600;
+  }
+  .feat-check-list { display: flex; flex-direction: column; gap: 6px; }
+  .feat-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12.5px;
+    cursor: pointer;
+    color: #374151;
+  }
+  .feat-check input[type=checkbox] { accent-color: #1a1a2e; width: 14px; height: 14px; }
+  .reset-btn {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background: #f1f5f9;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .15s;
+    margin-top: 4px;
+  }
+  .reset-btn:hover { background: #e2e8f0; color: #1a1a2e; }
+
+  /* ── Main content ─────────────────────────────── */
+  .main-content {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+  }
+  .results-count {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+  .results-count strong { color: #1a1a2e; }
+
+  /* ── Cards grid ───────────────────────────────── */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+
+  /* ── Card ─────────────────────────────────────── */
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06);
+    border: 1.5px solid #e8edf3;
+    transition: transform .18s, box-shadow .18s;
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,.1);
+  }
+  .card-header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+    padding: 10px 12px 8px;
+    color: #fff;
+    min-height: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-brand {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    opacity: 0.6;
+    margin-bottom: 2px;
+  }
+  .card-name {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  /* image area */
+  .card-img-wrap {
+    height: 190px;
+    overflow: hidden;
+    background: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-img-wrap img {
+    max-height: 182px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform .3s;
+  }
+  .card-img-wrap.brand-litime img { transform: scale(1.55); }
+  .card:hover .card-img-wrap.brand-litime img { transform: scale(1.62); }
+
+  /* badges */
+  .card-badges {
+    padding: 8px 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    min-height: 28px;
+  }
+  .badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .feat-bt   { background: #E3F2FD; color: #1565C0; }
+  .feat-lt   { background: #E8F5E9; color: #2E7D32; }
+  .feat-heat { background: #FFF3E0; color: #E65100; }
+  .feat-can  { background: #F3E5F5; color: #6A1B9A; }
+  .feat-sp   { background: #FFF9C4; color: #F57F17; }
+  .feat-flex { background: #E8EAF6; color: #283593; }
+
+  /* app tags */
+  .app-tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 20px;
+  }
+  .tag-trolling { background: #DDEEFF; color: #0D3B8E; }
+  .tag-camper   { background: #FFF8E1; color: #F57F17; }
+  .tag-offgrid  { background: #F3E5F5; color: #6A1B9A; }
+  .tag-boot     { background: #E8F5E9; color: #2E7D32; }
+  .tag-onderzit { background: #FCE4EC; color: #880E4F; }
+  .tag-mover    { background: #E0F7FA; color: #006064; }
+
+  /* card body */
+  .card-body {
+    padding: 10px 12px 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .card-desc {
+    font-size: 11.5px;
+    color: #64748b;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+  .card-spec {
+    font-size: 12px;
+    color: #374151;
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+  .card-spec strong { font-weight: 600; }
+  .spec-muted { color: #aaa; font-size: 10px; margin-left: 4px; }
+
+  /* price block */
+  .card-price-block {
+    margin-top: auto;
+    padding: 10px 12px;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .price-main { font-size: 20px; font-weight: 800; color: #1a1a2e; }
+  .price-sub  { font-size: 11px; color: #94a3b8; margin-top: 1px; }
+
+  /* buy buttons */
+  .card-buy-links {
+    padding: 0 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .buy-btn {
+    display: block;
+    text-align: center;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: filter .15s;
+  }
+  .buy-btn:hover { filter: brightness(0.9); }
+  .btn-bol { background: #0066CC; color: #fff; }
+  .btn-amz { background: #FF9900; color: #111; }
+
+  /* no results */
+  .no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #94a3b8;
+  }
+  .no-results p:first-child { font-size: 18px; margin-bottom: 8px; }
+  .no-results p:last-child  { font-size: 14px; }
+
+  /* hidden */
+  .card[data-hidden="true"] { display: none; }
+
+  @media (max-width: 640px) {
+    .page-wrap { flex-direction: column; }
+    .sidebar { width: 100%; height: auto; position: static; border-right: none; border-bottom: 1px solid #e2e8f0; }
+    .lang-switcher { position: static; justify-content: flex-end; margin-bottom: 8px; }
+  }
+</style>

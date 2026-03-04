@@ -1,0 +1,23 @@
+---
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import yaml from 'js-yaml';
+import Base from '../../layouts/Base.astro';
+import Comparator from '../../components/Comparator.astro';
+import type { Product } from '../../types';
+import t from '../../i18n/nl.json';
+
+const productsRaw = yaml.load(
+  readFileSync(resolve('src/data/products.yaml'), 'utf8')
+) as Product[];
+---
+
+<Base title={t.siteName} description={t.siteDesc} lang="nl">
+  <Comparator
+    t={t}
+    products={productsRaw}
+    locale="nl"
+    altLocale="de"
+    altUrl="/de/"
+  />
+</Base>

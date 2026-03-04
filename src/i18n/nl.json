@@ -1,0 +1,84 @@
+{
+  "lang": "nl",
+  "siteName": "LiFePO4 Accuvergelijker",
+  "siteDesc": "Vergelijk LiFePO4 lithiumaccu's op prijs, capaciteit, functies en toepassing.",
+  "title": "LiFePO4 Accuvergelijker",
+  "subtitle": "Vind de juiste lithiumaccu voor jouw boot, camper of off-grid systeem",
+
+  "filter": {
+    "voltage": "Spanning",
+    "brand": "Merk",
+    "warranty": "Garantie",
+    "cycles": "Min. cycli",
+    "features": "Functies",
+    "application": "Toepassing",
+    "all": "Alle",
+    "reset": "Reset filters",
+    "jaar": "jaar",
+    "plus": "+"
+  },
+
+  "features": {
+    "bluetooth": "Bluetooth",
+    "lowtemp": "Low Temp Cutoff",
+    "heating": "Verwarming",
+    "can": "CAN / Victron",
+    "flex": "ComFlex (rack)",
+    "sp": "4S4P geschikt"
+  },
+
+  "apps": {
+    "trolling": "Trolling motor",
+    "camper": "Camper / RV",
+    "offgrid": "Off-grid",
+    "boot": "Buitenboord",
+    "onderzit": "Onderzit",
+    "mover": "Mover"
+  },
+
+  "card": {
+    "priceFrom": "Prijs",
+    "priceLabel": "Laagste prijs",
+    "bolPrice": "bol.com",
+    "amzPrice": "Amazon",
+    "weight": "Gewicht",
+    "dims": "Afmetingen",
+    "cycles": "cycli",
+    "dod": "DOD",
+    "warranty": "Garantie",
+    "years": "jaar",
+    "dimsUnknown": "Afmetingen onbekend",
+    "buyBol": "Kopen op bol.com",
+    "buyAmz": "Kopen op Amazon",
+    "noResults": "Geen accu's gevonden voor deze filters.",
+    "resetHint": "Pas de filters aan om resultaten te zien."
+  },
+
+  "features_info": {
+    "bt": {
+      "badge": "Bluetooth 5.0",
+      "title": "Bluetooth 5.0 bewaking",
+      "body": "Met ingebouwde Bluetooth 5.0 verbind je de accu draadloos met de app. Je ziet realtime laadstatus, spanning, stroom, temperatuur en BMS-alarmen. Bereik ca. 10 meter. Geen extra shunt of display nodig."
+    },
+    "lt": {
+      "badge": "Low Temp Cutoff",
+      "title": "Low Temp Cutoff — laadbescherming bij vorst",
+      "body": "Bij vriestemperaturen (onder 0 °C) blokkeert de accu automatisch het laden om celbeschadiging te voorkomen. Ontladen blijft gewoon mogelijk. Herstelt automatisch als de accu opwarmt."
+    },
+    "heat": {
+      "badge": "Heating",
+      "title": "Ingebouwde verwarming",
+      "body": "Het interne verwarmingselement verwarmt de accu automatisch voor het laden. Laden is zo veilig mogelijk tot −20 °C. Ideaal voor campers, boten en wintergebruik."
+    },
+    "can": {
+      "badge": "CAN/RS485 + Victron",
+      "title": "CAN/RS485 — Victron-integratie",
+      "body": "Fysieke CAN-bus en RS485 poorten voor directe integratie met Victron (Cerbo GX, MultiPlus). De accu stuurt 25+ parameters door. Geen extra SmartShunt nodig."
+    },
+    "sp": {
+      "badge": "4S4P",
+      "title": "4S4P — serie- en parallelschakeling",
+      "body": "4 accu's in serie (4×12V = 48V) én 4 rijen parallel = 16 accu's voor grote systemen. Gebruik altijd identieke accu's. Een batterijbalancer is sterk aanbevolen bij serie-schakeling."
+    }
+  }
+}

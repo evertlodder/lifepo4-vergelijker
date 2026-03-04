@@ -1,0 +1,1236 @@
+- id: litime-12v-100ah-lifepo4-basic
+  name: 12V 100Ah LiFePO4 Basic
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 100
+  price: 215.99
+  priceBol: 352.95
+  priceAmz: null
+  weight: 11
+  dims:
+  - 32.9
+  - 21.4
+  - 17.2
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - offgrid
+  warranty: 5
+  desc:
+    nl: Budget instapmodel, universeel voor zonnepanelen en offgrid
+    de: Budget-Einstiegsmodell, universell für Solaranlagen und Off-Grid
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/12v100AhLiFePO4Batterie.webp?v=1711359324
+  bol: https://www.bol.com/nl/nl/p/litime-lifepo4-100ah-12v-mini-lithiumbatterij-max-15-000-diepe-cycli-en-1280wh-uitgangsvermogen-klein-formaat-en-laag-gewicht-ingebouwde-100a-bms-10-jaar-levensduur-lithiumbatterij/9300000242607269/
+  amz: https://www.amazon.nl/dp/B0C99BJ5GJ?tag=greenspark0a-21
+- id: litime-12v-50ah-lifepo4-basic
+  name: 12V 50Ah LiFePO4 Basic
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 50
+  price: 134.99
+  priceBol: 188.95
+  priceAmz: null
+  weight: 5.1
+  dims:
+  - 19.5
+  - 17.2
+  - 16.6
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - offgrid
+  warranty: 5
+  desc:
+    nl: Compact en licht voor kleine boot- en offgridsystemen
+    de: Kompakt und leicht für kleine Boot- und Off-Grid-Systeme
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/20240209-083802_e7b06986-1baf-4031-bb81-8379a3f917cd.jpg?v=1707439214
+  bol: https://www.bol.com/nl/nl/p/litime-12-8-v-50-ah-lifepo4-lithiumbatterij-640-wh-lithiumbatterij-50-a-bms-vervangende-batterij-voor-loodzuurbatterij-veel-gebruikt-in-campers-en-op-campings/9300000242607266/
+  amz: https://www.amazon.nl/dp/B0C998BP1J?tag=greenspark0a-21
+- id: litime-12v-50ah-smart-bluetooth-lifepo4
+  name: 12V 50Ah Smart Bluetooth LiFePO4
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 50
+  price: 159.99
+  priceBol: null
+  priceAmz: null
+  weight: 5.1
+  dims:
+  - 19.5
+  - 17.2
+  - 16.6
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - offgrid
+  warranty: 5
+  desc:
+    nl: Bluetooth-bewaking, low-temp bescherming voor trollingmotoren
+    de: Bluetooth-Überwachung, Tieftemperaturschutz für Trollingmotoren
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/LiFePO4_12V_50Ah_Bluetooth_Kalteschutz_Deep_Cycle_Lithium_Batterie.webp?v=1741178906
+  bol: null
+  amz: https://www.amazon.nl/dp/B0FKB3XHTX?tag=greenspark0a-21
+- id: litime-12v-100ah-tm-trolling-motor
+  name: 12V 100Ah TM Trolling Motor
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 100
+  price: 229.99
+  priceBol: null
+  priceAmz: null
+  weight: 11
+  dims:
+  - 32.9
+  - 21.4
+  - 17.2
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - trolling
+  warranty: 5
+  desc:
+    nl: Speciaal voor trollingmotoren, hoge ontlaadstroom 150A
+    de: Speziell für Trollingmotoren, hoher Entladestrom 150A
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/WILL_PROWSE_2_18b0bbd2-c04a-40ff-9760-a8267a9ce9ec.jpg?v=1724845831
+  bol: null
+  amz: https://www.amazon.nl/dp/B0CJX8QBC2?tag=greenspark0a-21
+- id: litime-12v-100ah-h190-bluetooth-din-h8
+  name: 12V 100Ah H190 Bluetooth (DIN H8)
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 100
+  price: 256.49
+  priceBol: 325.95
+  priceAmz: null
+  weight: 9.8
+  dims:
+  - 35.8
+  - 18.8
+  - 17.7
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - camper
+  - onderzit
+  warranty: 5
+  desc:
+    nl: Onderzitmodel voor Fiat Ducato/Peugeot Boxer, ECE-R10 gecertificeerd
+    de: Untersitzmodell für Fiat Ducato/Peugeot Boxer, ECE-R10 zertifiziert
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/12V-100Ah-H190-Smart-BMS-Mit-Bluetooth_-Tieftemperaturschutz-Fur-Wohnmobil-Untersitz-LiFePO4-Batteri-ECE_R10_Certification.webp?v=1750668086
+  bol: https://www.bol.com/nl/nl/p/litime-12v-100ah-lifepo4-camper-onderzetbatterij-met-bluetooth-smart-bms-bescherming-tegen-lage-temperaturen-max-15000-cycli-100a-bms-20-48kwh-din-h8-l5-formaat-loodzuurvervanger-perfect-voor-campers/9300000242607276/
+  amz: https://www.amazon.nl/dp/B0CM3KGHSF?tag=greenspark0a-21
+- id: litime-12v-100ah-h190-self-heating-bluetooth
+  name: 12V 100Ah H190 Self-Heating Bluetooth
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 100
+  price: 279.99
+  priceBol: 334.95
+  priceAmz: null
+  weight: 9.8
+  dims:
+  - 35.8
+  - 18.9
+  - 17.7
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: false
+  heat: true
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - camper
+  - onderzit
+  warranty: 5
+  desc:
+    nl: Zelfverwarmend onderzitmodel, laden tot −20 °C
+    de: Selbstheizend Untersitzmodell, Laden bis −20 °C
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/12V_100Ah_H190_LiFePO4_Deep_Cycle_Batterie_mit_Bluetooth_Heizung.webp?v=1745130612
+  bol: https://www.bol.com/nl/nl/p/litime-12v-100ah-lifepo4-accu-met-zelfverwarming-20-tot-50-c-lage-temperatuur-opladen-100a-bms-4000-15000-cycli-10-jaar-levensduur-perfect-voor-campers-zonne-energie-kamperen-off-grid-maritiem-gebruik/9300000242607275/
+  amz: https://www.amazon.nl/dp/B0D229XMXB?tag=greenspark0a-21
+- id: litime-12v-100ah-h190-mover-bluetooth-+-heating
+  name: 12V 100Ah H190 Mover Bluetooth + Heating
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 100
+  price: 235.29
+  priceBol: null
+  priceAmz: null
+  weight: 9.8
+  dims:
+  - 35.8
+  - 18.9
+  - 17.7
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: false
+  heat: true
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - camper
+  - mover
+  - onderzit
+  warranty: 5
+  desc:
+    nl: Speciaal voor camper mover, 200A BMS, verwarming ingebouwd
+    de: Speziell für Wohnmobil-Mover, 200A BMS, integrierte Heizung
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/12V_100Ah_H190_LiFePO4_Deep_Cycle_Batterie_mit_Bluetooth_Heizung.webp?v=1745130612
+  bol: null
+  amz: https://www.amazon.nl/dp/B0D229XMXB?tag=greenspark0a-21
+- id: litime-12v-100ah-buitenboord-bluetooth
+  name: 12V 100Ah Buitenboord Bluetooth
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 100
+  price: 275.99
+  priceBol: null
+  priceAmz: null
+  weight: 9.8
+  dims:
+  - 33
+  - 21.6
+  - 17.2
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - boot
+  warranty: 5
+  desc:
+    nl: Speciaal voor buitenboordmotoren, marinekwaliteit
+    de: Speziell für Außenbordmotoren, Marinequalität
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/01_7968dfd7-3653-4410-b1fd-0279714f4f16.webp?v=1751463660
+  bol: null
+  amz: null
+- id: litime-12v-100ah-group24-bluetooth-camper
+  name: 12V 100Ah Group24 Bluetooth Camper
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 100
+  price: 242.99
+  priceBol: 320.95
+  priceAmz: null
+  weight: 9.5
+  dims:
+  - 26
+  - 21.1
+  - 16.8
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - camper
+  warranty: 5
+  desc:
+    nl: Compact Group 24-formaat voor campers, low-temp bescherming
+    de: Kompaktes Group 24-Format für Wohnmobile, Tieftemperaturschutz
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/12V100AhGroup24BluetoothLithium-Batterie-1.webp?v=1731405057
+  bol: https://www.bol.com/nl/nl/p/litime-12v-100ah-bci-group-24-bluetooth-lifepo4-batterij-lithiumbatterij-met-100a-bms-en-bescherming-tegen-lage-temperaturen-max-15-000-cycli-1280wh-perfect-voor-campers-bestelwagens-aanhangwagens-zonne-energie-installaties-en-boten/9300000242607277/
+  amz: https://www.amazon.nl/dp/B0D8BCWNYD?tag=greenspark0a-21
+- id: litime-12v-140ah-h190-bluetooth-din-h8,-150a
+  name: 12V 140Ah H190 Bluetooth (DIN H8, 150A)
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 140
+  price: 277.3
+  priceBol: null
+  priceAmz: null
+  weight: 9.8
+  dims:
+  - 35.8
+  - 18.9
+  - 17.7
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - camper
+  - onderzit
+  warranty: 5
+  desc:
+    nl: Zware onderzitaccu, 140Ah in H190 formaat, 150A BMS
+    de: Schwere Untersitzbatterie, 140Ah im H190-Format, 150A BMS
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/12V140Ah-H190-R10_2.webp?v=1760522768
+  bol: null
+  amz: null
+- id: litime-12v-140ah-h190-deep-cycle-bluetooth
+  name: 12V 140Ah H190 Deep Cycle Bluetooth
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 140
+  price: 359.99
+  priceBol: null
+  priceAmz: null
+  weight: 9.8
+  dims:
+  - 35.8
+  - 18.9
+  - 17.7
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - camper
+  - onderzit
+  warranty: 5
+  desc:
+    nl: H190 deep-cycle, 140Ah met uitgebreide BMS-bescherming
+    de: H190 Deep-Cycle, 140Ah mit erweitertem BMS-Schutz
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/12V140Ah-H190-R10_2.webp?v=1760522768
+  bol: null
+  amz: null
+- id: litime-12v-300ah-lifepo4-basic
+  name: 12V 300Ah LiFePO4 Basic
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 300
+  price: 512.99
+  priceBol: 644.95
+  priceAmz: null
+  weight: 27.2
+  dims:
+  - 52.2
+  - 21.8
+  - 24
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - offgrid
+  warranty: 5
+  desc:
+    nl: Grote energiebuffer voor off-grid en zonne-energiesystemen
+    de: Großer Energiepuffer für Off-Grid- und Solarsysteme
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/12-12V300Ah.jpg?v=1702737060
+  bol: https://www.bol.com/nl/nl/p/litime-12v-300ah-lifepo4-lithiumbatterij-ingebouwde-200a-bms-3840wh-energie-deep-cycle-batterijen-max-15000-diepe-cycli-en-10-jaar-levensduur-perfect-voor-off-grid-camper-zonne-installatie/9300000242607270/
+  amz: https://www.amazon.nl/dp/B0C9C4WL8V?tag=greenspark0a-21
+- id: litime-12v-320ah-w190-smart-bluetooth
+  name: 12V 320Ah W190 Smart Bluetooth
+  brand: litime
+  terminal: M8
+  voltage: 12V
+  cap: 320
+  price: 599.99
+  priceBol: null
+  priceAmz: null
+  weight: 26
+  dims:
+  - 36.8
+  - 25.5
+  - 18.9
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: true
+  apps:
+  - offgrid
+  - onderzit
+  warranty: 5
+  desc:
+    nl: Brede W190 behuizing, Bluetooth-bewaking, ideaal voor grotere campers
+    de: Breites W190-Gehäuse, Bluetooth-Überwachung, ideal für größere Wohnmobile
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/litime-12v320ah-w190-produkt-ansicht-pc-01.jpg?v=1766137203
+  bol: null
+  amz: null
+- id: litime-24v-50ah-trolling-motor-bluetooth
+  name: 24V 50Ah Trolling Motor Bluetooth
+  brand: litime
+  terminal: M8
+  voltage: 24V
+  cap: 50
+  price: 287.99
+  priceBol: null
+  priceAmz: null
+  weight: 9.6
+  dims:
+  - 20.6
+  - 21.1
+  - 16.8
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - trolling
+  warranty: 5
+  desc:
+    nl: 24V voor dubbele spanning trollingmotor systemen
+    de: 24V für Doppelspannung-Trollingmotor-Systeme
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/24_50.jpg?v=1724407920
+  bol: null
+  amz: null
+- id: litime-24v-100ah-lifepo4-basic
+  name: 24V 100Ah LiFePO4 Basic
+  brand: litime
+  terminal: M8
+  voltage: 24V
+  cap: 100
+  price: 439.99
+  priceBol: null
+  priceAmz: null
+  weight: 21.5
+  dims:
+  - 53.2
+  - 21.5
+  - 20.7
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  warranty: 5
+  desc:
+    nl: 24V systeem voor krachtigere toepassingen en omvormers
+    de: 24V-System für leistungsstärkere Anwendungen und Wechselrichter
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/21-24V100Ah.jpg?v=1702738161
+  bol: null
+  amz: https://www.amazon.nl/dp/B0C99CQ4G3?tag=greenspark0a-21
+- id: litime-24v-200ah-lifepo4-basic
+  name: 24V 200Ah LiFePO4 Basic
+  brand: litime
+  terminal: M8
+  voltage: 24V
+  cap: 200
+  price: 1059.99
+  priceBol: null
+  priceAmz: null
+  weight: 38
+  dims:
+  - 52
+  - 22
+  - 26.9
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  warranty: 5
+  desc:
+    nl: Grote 24V buffer voor permanente off-grid installaties
+    de: Großer 24V-Puffer für dauerhafte Off-Grid-Installationen
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/22-24V200Ah.jpg?v=1702738152
+  bol: null
+  amz: null
+- id: litime-36v-50ah-smart-bluetooth-low-temp
+  name: 36V 50Ah Smart Bluetooth Low-Temp
+  brand: litime
+  terminal: M8
+  voltage: 36V
+  cap: 50
+  price: 341.99
+  priceBol: null
+  priceAmz: null
+  weight: 9.6
+  dims:
+  - 33
+  - 21.6
+  - 17.2
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  warranty: 5
+  desc:
+    nl: Direct 36V voor 36V trollingmotoren, Bluetooth + low-temp
+    de: Direkt 36V für 36V-Trollingmotoren, Bluetooth + Tieftemperatur
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/1_7e898c6e-85a4-4edb-b84d-ed4a18aff9e4.webp?v=1726832657
+  bol: null
+  amz: null
+- id: litime-512v-100ah-smart-comflex-flexcom
+  name: 51.2V 100Ah Smart ComFlex (FLEXCOM)
+  brand: litime
+  terminal: M8
+  voltage: 51.2V
+  cap: 100
+  price: 1155.99
+  priceBol: 1247.95
+  priceAmz: null
+  weight: 45
+  dims:
+  - 44.2
+  - 13.3
+  - 48
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: false
+  heat: false
+  can: true
+  flex: true
+  sp: false
+  apps:
+  - offgrid
+  warranty: 5
+  desc:
+    nl: Rack-montage energiesysteem met CAN/RS485 en Victron-integratie
+    de: Rack-Montage-Energiesystem mit CAN/RS485 und Victron-Integration
+  img: https://cdn.shopify.com/s/files/1/0674/1750/6073/files/Kommunikation_2.webp?v=1744375994
+  bol: https://www.bol.com/nl/nl/p/litime-48v-100ah-lifepo4-accu-comflex-edition-energieopslag-voor-thuis-5-12kwh-3u-behuizing-3-5-inch-touchscreen-ev-grade-cellen-ul-gecertificeerd-eenvoudige-installatie/9300000242366117/
+  amz: null
+- id: redodo-12v-50ah-lifepo4
+  name: 12V 50Ah LiFePO4
+  brand: redodo
+  terminal: M8
+  voltage: 12V
+  cap: 50
+  price: 139.99
+  priceBol: null
+  priceAmz: null
+  weight: 5.5
+  dims:
+  - 19.5
+  - 16.6
+  - 17.2
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  - camper
+  warranty: 5
+  desc:
+    nl: Instapmodel, lichtgewicht voor kleine systemen
+    de: Einstiegsmodell, leicht für kleine Systeme
+  img: https://m.media-amazon.com/images/I/61bBAXmbpuL._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B0CLP6TJRK?tag=greenspark0a-21
+- id: redodo-12v-50ah-bluetooth-+-low-temp
+  name: 12V 50Ah Bluetooth + Low-Temp
+  brand: redodo
+  terminal: M8
+  voltage: 12V
+  cap: 50
+  price: 159.99
+  priceBol: null
+  priceAmz: null
+  weight: 5.5
+  dims:
+  - 19.5
+  - 16.6
+  - 17.2
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  - camper
+  warranty: 5
+  desc:
+    nl: Bluetooth + low-temp cutoff voor veelzijdig gebruik
+    de: Bluetooth + Tieftemperatur-Abschaltung für vielseitigen Einsatz
+  img: https://m.media-amazon.com/images/I/61VcoA5f0+L._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B0DHGQT6WK?tag=greenspark0a-21
+- id: redodo-12v-100ah-lifepo4
+  name: 12V 100Ah LiFePO4
+  brand: redodo
+  terminal: M8
+  voltage: 12V
+  cap: 100
+  price: 227.99
+  priceBol: null
+  priceAmz: null
+  weight: 11
+  dims:
+  - 33
+  - 17.2
+  - 21.4
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  - camper
+  warranty: 5
+  desc:
+    nl: Basismodel, goede prijs-kwaliteitsverhouding
+    de: Niederländische Marke, 5 Jahre Garantie, 6000 Zyklen, Bluetooth-App; für Wohnmobil
+      und Off-Grid
+  img: https://m.media-amazon.com/images/I/61L0Gpg0yAL._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B0CP7DS6KY?tag=greenspark0a-21
+- id: redodo-12v-100ah-h190-din-h8
+  name: 12V 100Ah H190 (DIN H8)
+  brand: redodo
+  terminal: M8
+  voltage: 12V
+  cap: 100
+  price: 248.99
+  priceBol: null
+  priceAmz: null
+  weight: 9.5
+  dims:
+  - 35.8
+  - 19
+  - 17.5
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - camper
+  - onderzit
+  warranty: 5
+  desc:
+    nl: Onderzitmodel voor Europese campers (DIN H8)
+    de: Untersitzmodell für europäische Wohnmobile (DIN H8)
+  img: https://m.media-amazon.com/images/I/61ha+S68IDL._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B0GJSC9G5M?tag=greenspark0a-21
+- id: redodo-12v-100ah-h190-bluetooth-+-low-temp
+  name: 12V 100Ah H190 Bluetooth + Low-Temp
+  brand: redodo
+  terminal: M8
+  voltage: 12V
+  cap: 100
+  price: 249.99
+  priceBol: null
+  priceAmz: null
+  weight: 9.5
+  dims:
+  - 35.8
+  - 19
+  - 17.5
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - camper
+  - onderzit
+  warranty: 5
+  desc:
+    nl: H190 met Bluetooth en laadbescherming bij vorst
+    de: H190 mit Bluetooth und Ladeschutz bei Frost
+  img: https://m.media-amazon.com/images/I/61ha+S68IDL._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B0D83RP95L?tag=greenspark0a-21
+- id: redodo-12v-100ah-self-heating
+  name: 12V 100Ah Self-Heating
+  brand: redodo
+  terminal: M8
+  voltage: 12V
+  cap: 100
+  price: 269.99
+  priceBol: null
+  priceAmz: null
+  weight: 11.5
+  dims:
+  - 33
+  - 17.2
+  - 21.4
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: true
+  heat: true
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  - camper
+  warranty: 5
+  desc:
+    nl: Zelfverwarming, laden bij temperaturen tot −20 °C
+    de: Selbsterwärmung, Laden bei Temperaturen bis −20 °C
+  img: https://m.media-amazon.com/images/I/61iL+kbFiML._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B0DHGQXT5B?tag=greenspark0a-21
+- id: redodo-12v-140ah-h190-bluetooth-+-low-temp
+  name: 12V 140Ah H190 Bluetooth + Low-Temp
+  brand: redodo
+  terminal: M8
+  voltage: 12V
+  cap: 140
+  price: 359.99
+  priceBol: null
+  priceAmz: null
+  weight: 12
+  dims:
+  - 35.8
+  - 19
+  - 17.5
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - camper
+  - onderzit
+  warranty: 5
+  desc:
+    nl: Meer capaciteit in H190 onderzitformaat, 150A BMS
+    de: Mehr Kapazität im H190-Untersitzformat, 150A BMS
+  img: https://m.media-amazon.com/images/I/713jH3EBxOL._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B0DYDC9523?tag=greenspark0a-21
+- id: redodo-12v-165ah-bluetooth-group-31
+  name: 12V 165Ah Bluetooth (Group 31)
+  brand: redodo
+  terminal: M8
+  voltage: 12V
+  cap: 165
+  price: 379.99
+  priceBol: null
+  priceAmz: null
+  weight: 17
+  dims:
+  - 33
+  - 17.2
+  - 21.6
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  - camper
+  warranty: 5
+  desc:
+    nl: Group 31 formaat, hoge capaciteit met Bluetooth
+    de: Group 31 Format, hohe Kapazität mit Bluetooth
+  img: https://m.media-amazon.com/images/I/61CWBqOJ8XL._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B0FMJFKZFQ?tag=greenspark0a-21
+- id: redodo-12v-200ah-plus
+  name: 12V 200Ah Plus
+  brand: redodo
+  terminal: M8
+  voltage: 12V
+  cap: 200
+  price: 469.99
+  priceBol: null
+  priceAmz: null
+  weight: 20.5
+  dims:
+  - 53.2
+  - 20.7
+  - 21.6
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  - camper
+  warranty: 5
+  desc:
+    nl: Grote capaciteit met 200A BMS en hoge piekstroom
+    de: Große Kapazität mit 200A BMS und hohem Spitzenstrom
+  img: https://m.media-amazon.com/images/I/61fjunxI63L._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B09DY2QKRQ?tag=greenspark0a-21
+- id: redodo-12v-280ah-low-temp
+  name: 12V 280Ah Low-Temp
+  brand: redodo
+  terminal: M8
+  voltage: 12V
+  cap: 280
+  price: 458.99
+  priceBol: null
+  priceAmz: null
+  weight: 27
+  dims: null
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  - camper
+  warranty: 5
+  desc:
+    nl: Groot formaat met low-temp cutoff voor wintergebruik
+    de: Großes Format mit Tieftemperatur-Abschaltung für Winterbetrieb
+  img: https://m.media-amazon.com/images/I/61x-kvRWXYL._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B0FPFNRJKJ?tag=greenspark0a-21
+- id: redodo-12v-320ah-bluetooth
+  name: 12V 320Ah Bluetooth
+  brand: redodo
+  terminal: M8
+  voltage: 12V
+  cap: 320
+  price: 599.99
+  priceBol: null
+  priceAmz: null
+  weight: 29
+  dims: null
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  warranty: 5
+  desc:
+    nl: Compacte 320Ah mini, kleiner dan vergelijkbare accus
+    de: Kompakte 320Ah Mini, kleiner als vergleichbare Akkus
+  img: https://m.media-amazon.com/images/I/61zWoZurmiL._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B0GJCP5DHQ?tag=greenspark0a-21
+- id: redodo-24v-100ah-lifepo4
+  name: 24V 100Ah LiFePO4
+  brand: redodo
+  terminal: M8
+  voltage: 24V
+  cap: 100
+  price: 445.99
+  priceBol: null
+  priceAmz: null
+  weight: 22
+  dims:
+  - 53.2
+  - 20.7
+  - 21.6
+  dod: 100
+  cycles: 4000
+  bt: false
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  - camper
+  warranty: 5
+  desc:
+    nl: 24V basismodel voor krachtigere systemen
+    de: 24V Basismodell für leistungsstärkere Systeme
+  img: https://m.media-amazon.com/images/I/61LbuzIaN3L._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B0GJSMFVD9?tag=greenspark0a-21
+- id: redodo-24v-100ah-bluetooth-+-low-temp
+  name: 24V 100Ah Bluetooth + Low-Temp
+  brand: redodo
+  terminal: M8
+  voltage: 24V
+  cap: 100
+  price: 459.99
+  priceBol: null
+  priceAmz: null
+  weight: 22
+  dims:
+  - 53.2
+  - 20.7
+  - 21.6
+  dod: 100
+  cycles: 4000
+  bt: true
+  lt: true
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - offgrid
+  - camper
+  warranty: 5
+  desc:
+    nl: 24V met Bluetooth-bewaking en vorstbescherming
+    de: 24V mit Bluetooth-Überwachung und Frostschutz
+  img: https://m.media-amazon.com/images/I/61nzw6TbQEL._AC_SX300_SY300_.jpg
+  bol: null
+  amz: https://www.amazon.nl/dp/B0D83T1CYX?tag=greenspark0a-21
+- id: rebelcell-12v75-edge-lifepo4
+  name: 12V75 EDGE LiFePO4
+  brand: rebelcell
+  terminal: M8
+  voltage: '12'
+  cap: 75
+  price: 499
+  priceBol: 499
+  priceAmz: null
+  weight: 6.9
+  dims:
+  - 26
+  - 20.9
+  - 16.8
+  dod: 100
+  cycles: 5000
+  bt: true
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - trolling
+  warranty: 3
+  desc:
+    nl: Compact IP66 waterdichte accu voor 12V trollingmotoren en bootservice; 5000
+      cycli.
+    de: Kompakter IP66-wasserdichter Akku für 12V-Trollingmotoren; 5000 Zyklen
+  img: https://media.s-bol.com/q0Vq9BzYJWlG/wpz46Q8/550x528.jpg
+  bol: https://www.bol.com/nl/nl/p/rebelcell-12v75-edge-lifepo4-accu-bluetooth-ip66-waterdicht-12v75ah-960wh/9300000229366453/
+  amz: null
+- id: rebelcell-12v105-edge-lifepo4
+  name: 12V105 EDGE LiFePO4
+  brand: rebelcell
+  terminal: M8
+  voltage: '12'
+  cap: 105
+  price: 599
+  priceBol: 599
+  priceAmz: null
+  weight: 9
+  dims:
+  - 33
+  - 17.5
+  - 21.4
+  dod: 100
+  cycles: 5000
+  bt: true
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - trolling
+  warranty: 3
+  desc:
+    nl: IP66 accu voor trollingmotoren en bootservice; zwaarder gebruik dan de 75Ah
+      versie.
+    de: IP66-Akku für Trollingmotoren; schwerer Einsatz gegenüber der 75Ah-Version
+  img: https://media.s-bol.com/3DxWzZ0kvg0O/r0E82xL/550x447.jpg
+  bol: https://www.bol.com/nl/nl/p/12v120-pro-lifepo4-accu/9300000236075112/
+  amz: null
+- id: rebelcell-12v210-edge-lifepo4
+  name: 12V210 EDGE LiFePO4
+  brand: rebelcell
+  terminal: M8
+  voltage: '12'
+  cap: 210
+  price: 999
+  priceBol: 999
+  priceAmz: null
+  weight: 18.2
+  dims:
+  - 52.2
+  - 24
+  - 22
+  dod: 100
+  cycles: 5000
+  bt: true
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - trolling
+  - offgrid
+  warranty: 3
+  desc:
+    nl: Grote capaciteit 12V accu voor lange vaardagen of als service-accu op boot/camper.
+    de: Große Kapazität für lange Fahrtage oder als Service-Akku auf Boot/Wohnmobil
+  img: https://media.s-bol.com/r4n56lL7Y1GW/j2n1wAY/550x383.jpg
+  bol: https://www.bol.com/nl/nl/p/12v210-edge-lifepo4-accu/9300000236075444/
+  amz: null
+- id: rebelcell-24v105-edge-lifepo4
+  name: 24V105 EDGE LiFePO4
+  brand: rebelcell
+  terminal: M8
+  voltage: '24'
+  cap: 105
+  price: 999
+  priceBol: 999
+  priceAmz: null
+  weight: 9.6
+  dims:
+  - 33
+  - 17.5
+  - 21.4
+  dod: 100
+  cycles: 5000
+  bt: true
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - trolling
+  warranty: 3
+  desc:
+    nl: 24V IP66 accu specifiek voor 24V trollingmotoren, 5000 cycli.
+    de: 24V IP66-Akku speziell für 24V-Trollingmotoren, 5000 Zyklen
+  img: https://media.s-bol.com/Jw9540rprvQl/DRY1qn6/550x359.jpg
+  bol: https://www.bol.com/nl/nl/p/24v105-edge-lifepo4-accu/9300000236437165/
+  amz: null
+- id: rebelcell-36v105-edge-lifepo4
+  name: 36V105 EDGE LiFePO4
+  brand: rebelcell
+  terminal: M8
+  voltage: '36'
+  cap: 105
+  price: 2899
+  priceBol: 2899
+  priceAmz: null
+  weight: 9.6
+  dims:
+  - 33
+  - 17.5
+  - 21.4
+  dod: 100
+  cycles: 5000
+  bt: true
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - trolling
+  warranty: 3
+  desc:
+    nl: 36V IP66 accu voor krachtige 36V trollingmotoren; Minn Kota en Motorguide
+      compatibel.
+    de: 36V IP66-Akku für leistungsstarke 36V-Trollingmotoren; Minn Kota und Motorguide
+      kompatibel
+  img: https://media.s-bol.com/WN94xMvLOGjJ/oYvVZoL/550x464.jpg
+  bol: https://www.bol.com/nl/nl/p/36v105-edge-lifepo4-accu/9300000236437150/
+  amz: null
+- id: powerlit-12v-100ah-lifepo4
+  name: 12V 100Ah LiFePO4
+  brand: powerlit
+  terminal: M8
+  voltage: '12'
+  cap: 100
+  price: 549
+  priceBol: 549
+  priceAmz: null
+  weight: 10
+  dims:
+  - 26
+  - 16.8
+  - 20.9
+  dod: 100
+  cycles: 6000
+  bt: true
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - camper
+  - offgrid
+  warranty: 5
+  desc:
+    nl: Nederlands merk, 5 jaar garantie, 6000 cycli, Bluetooth app; voor camper en
+      off-grid.
+    de: Niederländische Marke, 5 Jahre Garantie, 6000 Zyklen, Bluetooth-App; für Wohnmobil
+      und Off-Grid
+  img: https://media.s-bol.com/KN4YJNoAwz1r/DkKgpLK/550x550.jpg
+  bol: https://www.bol.com/nl/nl/p/powerlit-lifepo4-accu-100ah-12v-lfp-lithium-accu-met-bluetooth-app-voor-boot-camper-5-jaar-garantie-6000-cycli/9300000186042138/
+  amz: null
+- id: powerlit-12v-200ah-lifepo4
+  name: 12V 200Ah LiFePO4
+  brand: powerlit
+  terminal: M8
+  voltage: '12'
+  cap: 200
+  price: 999
+  priceBol: 1099
+  priceAmz: null
+  weight: 20
+  dims:
+  - 48.7
+  - 17
+  - 24
+  dod: 100
+  cycles: 6000
+  bt: true
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - camper
+  - offgrid
+  warranty: 5
+  desc:
+    nl: 200Ah Nederlandse accu voor camper of zonne-energie; 5 jaar garantie, 6000
+      cycli.
+    de: 200Ah niederländischer Akku für Wohnmobil oder Solaranlage; 5 Jahre Garantie,
+      6000 Zyklen
+  img: https://media.s-bol.com/8n4oKwEvVo12/lYW3Ajg/550x397.jpg
+  bol: https://www.bol.com/nl/nl/p/powerlit-lfp-accu-200ah-12v-bluetooth-5-jaar-garantie-6000-cycli-voor-boot-camper-lifepo4-lithium-accu/9300000218069018/
+  amz: null
+- id: powerlit-12v-300ah-lifepo4
+  name: 12V 300Ah LiFePO4
+  brand: powerlit
+  terminal: M8
+  voltage: '12'
+  cap: 300
+  price: 1499
+  priceBol: 1499
+  priceAmz: null
+  weight: 27
+  dims:
+  - 52
+  - 26.9
+  - 22
+  dod: 100
+  cycles: 6000
+  bt: true
+  lt: false
+  heat: false
+  can: false
+  flex: false
+  sp: false
+  apps:
+  - camper
+  - offgrid
+  warranty: 5
+  desc:
+    nl: Professionele 300Ah accu met 5 jaar garantie voor grote off-grid en camper
+      systemen.
+    de: Professioneller 300Ah-Akku mit 5 Jahren Garantie für große Off-Grid- und Wohnmobil-Systeme
+  img: https://media.s-bol.com/Az4QJvQ1p83p/J6kmDAo/550x426.jpg
+  bol: https://www.bol.com/nl/nl/p/powerlit-lifepo4-accu-300ah-12v-lfp-lithium-accu-met-bluetooth-app-voor-boot-camper-5-jaar-garantie-6000-cycli/9300000222834124/
+  amz: null
